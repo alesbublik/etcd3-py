@@ -129,7 +129,7 @@ class BaseClient(AuthAPI, ClusterAPI, KVAPI, LeaseAPI, MaintenanceAPI, WatchAPI,
 
     @classmethod
     def _modelizeStreamResponse(cls, method, resp, decode=True):  # pragma: no cover
-        raise NotImplemented
+        raise NotImplementedError
 
     def __enter__(self):
         return self
